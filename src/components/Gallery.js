@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { DataContext } from '../context/DataContext'
 import GalleryItem from './GalleryItem'
 
-function Gallery(){
+const Gallery = () => {
     const data = useContext(DataContext)
     
     const display = data.map((item,index) => {
@@ -19,3 +19,5 @@ function Gallery(){
 }
 
 export default Gallery
+
+
